@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Multimodal Brand Compliance Engine</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="multimodal-brand-compliance-engine">Multimodal Brand Compliance Engine</h1>
+<p>Enterprise-grade multimodal LLMOps system for automated brand and regulatory compliance analysis of marketing videos using RAG, vector search, and Azure AI services.</p>
+<hr>
+<h2 id="-overview">📌 Overview</h2>
+<p>The <strong>Multimodal Brand Compliance Engine</strong> is an end-to-end AI system that automatically audits marketing videos for brand and regulatory violations.</p>
+<p>It leverages multimodal AI, retrieval-augmented generation (RAG), and cloud-based LLM orchestration to generate structured compliance reports with severity levels and recommendations.</p>
+<p>This project demonstrates real-world LLMOps architecture including:</p>
+<ul>
+<li>Multimodal processing</li>
+<li>Embedding-based retrieval</li>
+<li>Vector search</li>
+<li>LLM orchestration</li>
+<li>Observability</li>
+<li>Cloud deployment design</li>
+</ul>
+<hr>
+<h2 id="-architecture">🏗 Architecture</h2>
+<h3 id="high-level-flow">High-Level Flow</h3>
+<ol>
+<li>🎥 Video ingestion (YouTube URL input)</li>
+<li>📝 Transcript extraction</li>
+<li>🧠 Compliance rule embedding generation</li>
+<li>🔎 Vector similarity search (RAG retrieval)</li>
+<li>🤖 LLM-based compliance reasoning</li>
+<li>📊 Structured JSON compliance report</li>
+<li>📡 Observability &amp; logging</li>
+</ol>
+<hr>
+<h2 id="-tech-stack">🧰 Tech Stack</h2>
+<h3 id="backend">Backend</h3>
+<ul>
+<li>FastAPI</li>
+<li>Python</li>
+<li>LangGraph (LLM orchestration)</li>
+<li>Azure OpenAI</li>
+<li>Azure AI Search (Vector DB)</li>
+<li>Azure Application Insights</li>
+</ul>
+<h3 id="frontend">Frontend</h3>
+<ul>
+<li>React (Vite)</li>
+<li>Axios</li>
+</ul>
+<h3 id="ai-concepts-used">AI Concepts Used</h3>
+<ul>
+<li>Multimodal processing</li>
+<li>Retrieval-Augmented Generation (RAG)</li>
+<li>Embedding-based similarity search</li>
+<li>Prompt engineering</li>
+<li>Structured output generation</li>
+<li>Observability &amp; latency tracking</li>
+</ul>
+<hr>
+<h2 id="-sample-output">📊 Sample Output</h2>
+<pre><code class="language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;video_id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;ad_1023&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;compliance_status&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;FAIL&quot;</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;violations&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-punctuation">{</span>
+      <span class="hljs-attr">&quot;category&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Unsubstantiated Claims&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;severity&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;CRITICAL&quot;</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;confidence&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">0.89</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">&quot;recommendation&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Provide clinical evidence for health-related claims.&quot;</span>
+    <span class="hljs-punctuation">}</span>
+  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">&quot;final_report&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;The advertisement contains unsupported health benefit claims.&quot;</span>
+<span class="hljs-punctuation">}</span>
+</code></pre>
+<hr>
+<h2 id="-system-architecture">🏗 System Architecture</h2>
+<p>The following diagram illustrates the end-to-end multimodal compliance pipeline including frontend entry, backend orchestration, Azure-managed services, and observability components.</p>
+<p align="center">
+  <img src="file:///d:\AI_ML\Projects\Brand_Compliance\ComplianceQAPipeline\docs\images\architecture-workflow.png" width="900">
+</p>
+<p>Key Highlights:</p>
+<ul>
+<li>React frontend for YouTube URL submission</li>
+<li>FastAPI backend for orchestration</li>
+<li>LangGraph-based RAG workflow</li>
+<li>Azure OpenAI for reasoning &amp; embeddings</li>
+<li>Azure AI Search for vector retrieval</li>
+<li>Azure Video Indexer for transcript + OCR</li>
+<li>Azure Application Insights for observability</li>
+</ul>
+<hr>
+<h2 id="-frontend-ui">🎨 Frontend UI</h2>
+<p>The React-based frontend allows users to submit a YouTube video link and receive structured compliance analysis results.</p>
+<p align="center">
+  <img src="file:///d:\AI_ML\Projects\Brand_Compliance\ComplianceQAPipeline\docs\images\frontend-ui.png" width="850">
+</p>
+<p>Features:</p>
+<ul>
+<li>YouTube URL input</li>
+<li>Loading state during processing</li>
+<li>PASS / FAIL compliance indicator</li>
+<li>Categorized violation breakdown</li>
+<li>Severity-level classification</li>
+</ul>
+<hr>
+<h2 id="-compliance-result-output">📑 Compliance Result Output</h2>
+<p>Structured compliance report generated by the LLM orchestration pipeline.</p>
+<p align="center">
+  <img src="file:///d:\AI_ML\Projects\Brand_Compliance\ComplianceQAPipeline\docs\images\compliance-result.png" width="850">
+</p>
+<p>The system returns:</p>
+<ul>
+<li>Compliance status</li>
+<li>Violation categories</li>
+<li>Severity levels (CRITICAL / MAJOR / MINOR)</li>
+<li>Explanation and recommendations</li>
+<li>Confidence score</li>
+</ul>
+<hr>
+<h2 id="-observability--azure-application-insights">📡 Observability – Azure Application Insights</h2>
+<p>The system integrates Azure Application Insights to monitor:</p>
+<ul>
+<li>API request latency</li>
+<li>Dependency calls</li>
+<li>Error tracking</li>
+<li>Application Map</li>
+<li>Performance metrics</li>
+</ul>
+<p align="center">
+  <img src="file:///d:\AI_ML\Projects\Brand_Compliance\ComplianceQAPipeline\docs\images\azure-insights.png" width="900">
+</p>
+<p>This ensures production-grade monitoring and traceability across the LLM pipeline.</p>
+<hr>
+
+            
+            
+        </body>
+        </html>
